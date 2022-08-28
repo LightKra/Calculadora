@@ -1,0 +1,75 @@
+:root{
+    --main: #3FC45B;
+    --display: #4A4A4A;
+    --displayBorder: #246933;
+    --shadow: #2E2E2E;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #3B7BBB;
+    color: white;
+}
+.container{
+    height: 500px;
+    width: 350px;
+    margin: 50px auto;
+    background-color: var(--main);
+    box-shadow: 10px 5px 5px var(--shadow);
+    border-radius: 20px;
+}
+.display{
+    height: 150px;
+    width: 100%;
+}
+.display-border{
+    float: left;
+    height: 100px;
+    width: 310px;
+    margin: 18px 20px 10px 20px;
+    background-color: var(--display);
+    border-radius: 20px;
+    border: 2px solid var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+#display1, #display2{
+    height: 50px;
+    width: 100%;
+    padding: 10px 10px;
+    text-align: right;
+}
+#display1{
+    font-size: 23px;
+}
+.panel{
+    height: auto;
+    width: 310px;
+    margin: 0px auto 5px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 3px;
+    row-gap: 3px;
+  
+}
+button{
+    height: 60px;
+    color: white;
+    width: 70px;
+    border-radius: 20px;
+    background-color: var(--main);
+    box-shadow: 3px 3px 4px var(--shadow);
+    outline: none;
+    border: none;
+}
+#deleteTotal{
+    grid-column: 1 / 3;
+    grid-row: 1;
+    width: 148px;
+}
+.operator:last-child{
+    grid-column: 3 / 5;
+    grid-row: 5;
+    width: 148px;
+}
